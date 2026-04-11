@@ -29,12 +29,12 @@ COPY ev_charging_env/ ./ev_charging_env/
 COPY inference.py .
 COPY openenv.yaml .
 
-# Copy optional files (won't fail if missing during build)
-COPY app.py . 2>/dev/null || true
-COPY ui.py . 2>/dev/null || true
-COPY benchmarks.py . 2>/dev/null || true
-COPY documentation.py . 2>/dev/null || true
-COPY README.md . 2>/dev/null || true
+# Copy other application files
+COPY app.py .
+COPY ui.py .
+COPY benchmarks.py .
+COPY documentation.py .
+COPY README.md .
 
 # Verify the package is importable at build time
 RUN python -c "from ev_charging_env import create_easy_task, create_medium_task, create_hard_task; print('✅ ev_charging_env imports OK')"
