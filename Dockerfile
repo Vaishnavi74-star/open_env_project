@@ -43,5 +43,5 @@ RUN python -c "from ev_charging_env.simple_tasks import SimpleTask, create_easy_
 # Expose port for HuggingFace Spaces
 EXPOSE 7860
 
-# Default command: run inference evaluation
-CMD ["python", "inference.py"]
+# Default command: launch Gradio UI for HF Spaces
+CMD ["python", "app.py"]
