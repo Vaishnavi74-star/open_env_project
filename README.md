@@ -1,3 +1,13 @@
+---
+title: EV Charging Scheduler
+emoji: ⚡
+colorFrom: green
+colorTo: blue
+sdk: docker
+pinned: false
+app_port: 7860
+---
+
 # ⚡ EV Charging Scheduler - Production OpenEnv Environment
 
 A sophisticated, production-ready OpenEnv environment for optimizing electric vehicle (EV) charging scheduling across distributed charging infrastructure.
